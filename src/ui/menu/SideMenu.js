@@ -4,12 +4,7 @@ import { List, ListItemIcon, ListItemText, ListItem, Divider } from '@material-u
 import {Mail as MailIcon, AttachMoneyOutlined as Monetize, AllInbox as TodosIcon} from '@material-ui/icons';
 import { Icon, InlineIcon } from '@iconify/react';
 import nintendoswitchIcon from '@iconify/icons-simple-icons/nintendoswitch';
-import styled from 'styled-components';
 
-
-const ListItem = styled(ListItem)`
-    font-size: 12px
-`
 
 export default function SideMenu(props){
 
@@ -38,5 +33,4 @@ export default function SideMenu(props){
     )
 }
 
-// npm install --save-dev @iconify/react @iconify/icons-simple-icons
 
