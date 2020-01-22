@@ -18,7 +18,7 @@ export default function SideMenu(props){
                 <Divider />
                 <ListItem button key={2} >
                     <ListItemIcon><TodosIcon style={{color: 'white'}} /></ListItemIcon>
-                    <ListItemText primary='Todoss os jogos' />
+                    <ListItemText primary='Todoss os jogossss' />
                 </ListItem>
                 <ListItem button key={3}>
                     <ListItemIcon><Monetize style={{color: 'white'}} /></ListItemIcon>
