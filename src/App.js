@@ -12,7 +12,6 @@ import SideMenu from './ui/menu/SideMenu';
 const MenuButtom = styled(IconButton)`
 width: 48px;
 border-radius: 20px;
-
 `
 export default function App(){
     const [menuOpen, setMenuOpen] = useState(false);
