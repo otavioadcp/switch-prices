@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Drawer from '@material-ui/core/Drawer';
 import { List, ListItemIcon, ListItemText, ListItem, Divider } from '@material-ui/core';
 import {Mail as MailIcon, AttachMoneyOutlined as Monetize, AllInbox as TodosIcon} from '@material-ui/icons';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import nintendoswitchIcon from '@iconify/icons-simple-icons/nintendoswitch';
 
 
