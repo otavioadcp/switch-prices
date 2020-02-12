@@ -3,7 +3,7 @@ import AppBar from './components/AppBar';
 import './App.css';
 import { ThemeProvider } from '@material-ui/core/styles';
 import createMuiTheme from './ui/theme/index'
-
+import GameCard from './components/GameCard'
 export default function App(){
     const [menuOpen, setMenuOpen] = useState(false);
     const [items, setItems] = useState([]);
@@ -18,7 +18,7 @@ export default function App(){
       <div className="App">
         <ThemeProvider theme={createMuiTheme}>
           <AppBar position="static" setOpen={() => setMenuOpen(!menuOpen)} onClick={() => setMenuOpen(!menuOpen)} open={menuOpen}/>
-          {items.map((item, index) => <div>{item}</div>)}
+          {items.map(item => <GameCard />)}
         </ThemeProvider>
       </div>
     );

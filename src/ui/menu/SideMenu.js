@@ -25,7 +25,7 @@ export default function SideMenu(props){
                     <ListItemText primary='Promoções' />
                 </ListItem>
                 <ListItem button key={4}>
-                    <ListItemIcon><MailIcon /></ListItemIcon>
+                    <ListItemIcon><MailIcon style={{color: 'white'}}/></ListItemIcon>
                     <ListItemText primary='teste' />
                 </ListItem>
             </List>
