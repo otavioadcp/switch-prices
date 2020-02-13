@@ -7,10 +7,9 @@ import nintendoswitchIcon from '@iconify/icons-simple-icons/nintendoswitch';
 
 
 export default function SideMenu(props){
-
     return(
         <Drawer open={props.open} onClose={() => props.setOpen(!props.open)}>
-            <List style={{width: '300px', backgroundColor: '#C62828', color: 'white'}}>
+            <List style={{width: '300px', backgroundColor: '#424242', color: 'white', height:'100%'}}>
                 <ListItem component={'span'}key={1} style={{position:'relative'}}>
                     <ListItemIcon  style={{display: 'inline'}}><Icon color={'white'} style={{fontSize: '24px'}} icon={nintendoswitchIcon} /></ListItemIcon>
                     <ListItemText primary='Nintendo Switch' />

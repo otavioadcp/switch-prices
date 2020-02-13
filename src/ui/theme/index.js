@@ -2,9 +2,9 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 const palette = {
-  primary: { main: '#C62828', contrastText: '#ffffff' },
-  secondary: { main: '#64B5F6' }
+  primary: { main: '#424242' },
+  secondary: { main: '#42A5F5', contrastText: '#FAFAFA' }
 };
-const themeName = 'Tall Poppy Malibu Pheasant';
+const themeName = 'Tundora Picton Blue Centipede';
 
 export default createMuiTheme({ palette, themeName });

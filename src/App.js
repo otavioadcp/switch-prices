@@ -4,21 +4,23 @@ import './App.css';
 import { ThemeProvider } from '@material-ui/core/styles';
 import createMuiTheme from './ui/theme/index'
 import GameCard from './components/GameCard'
+import axios from 'axios'
+
 export default function App(){
     const [menuOpen, setMenuOpen] = useState(false);
-    const [items, setItems] = useState([]);
+    const [items, setItems] = useState({});
 
-    
-    useEffect(() => {
-      setItems(['1','2','3','4','5'])
-
+    useEffect(async () => {
+      let request = await axios.get('https://r6tab.com/api/search.php?platform=uplay&search=Zeerdo')
+      setItems(request.data.results[0])
     }, []);
 
     return (
       <div className="App">
         <ThemeProvider theme={createMuiTheme}>
           <AppBar position="static" setOpen={() => setMenuOpen(!menuOpen)} onClick={() => setMenuOpen(!menuOpen)} open={menuOpen}/>
-          {items.map(item => <GameCard />)}
+          <img src={items ? `https://ubisoft-avatars.akamaized.net/${items.p_user}/default_146_146.png` : null}/>
+          <div>{JSON.stringify(items)}</div>
         </ThemeProvider>
       </div>
     );
